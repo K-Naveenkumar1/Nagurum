@@ -1,0 +1,63 @@
+/* Mobile Styles */
+@media (max-width: 767.98px) {
+    /* Base styles for mobile */
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+        overflow-x: hidden;
+    }
+    
+    /* Container adjustments */
+    .container, .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Navigation */
+    .navbar-collapse {
+        background: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Buttons */
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Forms */
+    .form-control {
+        margin-bottom: 10px;
+    }
+    
+    /* Hide desktop elements */
+    .desktop-only {
+        display: none !important;
+    }
+    
+    /* Show mobile elements */
+    .mobile-only {
+        display: block !important;
+    }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none !important;
+    }
+    
+    .desktop-only {
+        display: block !important;
+    }
+}
